@@ -1,4 +1,4 @@
-require("./deps");
+require("./config");
 
 const port = process.env.PORT || 2018;
 
@@ -10,5 +10,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, () => {
-  console.warn(`App running on port: ${port}`);
+  process.logger(`App running on port: ${port}`);
 });

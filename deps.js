@@ -1,6 +1,7 @@
 const map = new Map();
 
 map.set("http", require("http"));
+map.set("url", require("url"));
 map.set("jwt", require("jsonwebtoken"));
 
 global.getPackage = (packageName) => {
